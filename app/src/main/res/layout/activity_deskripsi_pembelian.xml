@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Deskripsi_Pembelian"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:background="@color/siver_pucat">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="100dp">
+            ---------------Linear dasar-------------------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                ----------------Linear text atas-------------------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deskripsi Pembelian"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_marginBottom="50dp"/>
+            </LinearLayout>
+                ----------------Linear text atas-------------------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Merk :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Jenis :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Warna :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Harga :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Jumlah :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Ukuran :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Pembayaran :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+
+
+                </LinearLayout>
+                --------------TV ber id---------------------------------
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Merk "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:id="@+id/tv_jen1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Jenis "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:id="@+id/tv_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Warna "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Harga "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:id="@+id/tv_jumlah"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Jumlah "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:id="@+id/tv_ukuran"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Ukuran "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:id="@+id/tv_bayar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Pembayaran "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                --------------TV ber id---------------------------------
+
+            </LinearLayout>
+            -----------------Button beli----------------------------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                >
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="Checkout"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+            -----------------Button beli----------------------------------------
+            </LinearLayout>
+            --------------------------Linear dasar--------------------------
+        </com.google.android.material.card.MaterialCardView>
+        --------------- Card tengah---------------------------
+    -----Bottom Navigation-----------------------------------------
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/menu_bottom"
+        android:layout_marginTop="-10dp"
+
+        >
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    -----Bottom Navigation-----------------------------------------
+
+
+
+</LinearLayout>

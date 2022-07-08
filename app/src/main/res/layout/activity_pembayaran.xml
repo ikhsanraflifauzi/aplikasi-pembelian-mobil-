@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pembayaran"
+    android:orientation="vertical"
+    android:background="@color/siver_pucat">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/shopee">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/bac"/>
+
+    </LinearLayout>
+    ---------------------- Card Tengah---------------------
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@color/white">
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="300dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Merk :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Jenis :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Warna :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Harga :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Jumlah :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Ukuran :"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+
+            </LinearLayout>
+            --------------TV ber id---------------------------------
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="300dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tv_merk"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Merk "
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:id="@+id/tv_jenis"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Jenis "
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+                <TextView
+                    android:id="@+id/tv_warna"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Warna "
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+
+                <TextView
+                    android:id="@+id/tv_harga"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Harga "
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="15dp"/>
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:background="@color/wheat"
+                    android:layout_marginBottom="20dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Ukuran"
+                    android:textColorHint="@color/purple_500"
+                    android:background="@color/siver_pucat"
+                    style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+                    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                        android:id="@+id/auto_complete"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+            --------------TV ber id---------------------------------
+
+        </LinearLayout>
+
+
+
+-----------------Button beli----------------------------------------
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:layout_marginTop="310dp">
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/orange"
+                android:text="Beli"
+                android:textStyle="bold"/>
+        </LinearLayout>
+        -----------------Button beli----------------------------------------
+    </com.google.android.material.card.MaterialCardView>
+    --------------- Card tengah---------------------------
+
+    -----Bottom Navigation-----------------------------------------
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/menu_bottom"
+
+        >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    -----Bottom Navigation-----------------------------------------
+
+
+</LinearLayout>

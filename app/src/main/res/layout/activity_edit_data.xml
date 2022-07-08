@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_data"
+    android:background="@color/siver_pucat"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/cobalt_blue"
+        android:orientation="vertical">
+
+
+
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="245dp"
+            android:src="@drawable/edtdt"
+            android:layout_marginBottom="40dp"/>
+
+    </LinearLayout>
+    --------------- Daftar card-----------------------
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:backgroundTint="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="-20dp">
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:background="@color/white">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/oip"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="270dp"
+            android:layout_height="200dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/TV_mrk"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Merk "
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                android:textSize="25dp"
+                android:gravity="center"/>
+
+            -------------- bagian deskripsi---------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                ----------------- TV Non ID-------------------
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Jenis :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Warna :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Harga :"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                ----------------- TV Non ID--------------------
+
+
+
+                ----------------Tv ber id -------------------
+                <LinearLayout
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/TV_jns"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Jenis "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:id="@+id/TV_wrn"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Warna "
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                    <TextView
+                        android:id="@+id/tv_harga"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Harga"
+                        android:textStyle="bold"
+                        android:textSize="18dp"
+                        android:layout_marginLeft="15dp"/>
+                </LinearLayout>
+                ----------------- tv ber id -----------------
+            </LinearLayout>
+            -------------- bagian deskripsi---------------
+
+            -----------------------Button------------------------------------------------
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@color/white">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="100dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="40dp"
+                    android:backgroundTint="@color/white"
+                    android:text="Update"
+                    android:textColor="@color/orange">
+
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="@color/orange"
+                    android:text="Delete"
+                    android:textColor="@color/white">
+
+                </com.google.android.material.button.MaterialButton>
+
+            </LinearLayout>
+            ------------------Button--------------------------------------
+
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+    ------------------ daftar kartu-----------------------
+
+    -----Bottom Navigation-----------------------------------------
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:menu="@menu/menu_bottom"
+        android:layout_marginTop="210dp">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    -----Bottom Navigation-----------------------------------------
+
+</LinearLayout>
